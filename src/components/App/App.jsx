@@ -13,7 +13,14 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Catalog />} />
-        <Route path="/cart" element={<CartPage />} />
+        <Route
+          path="/cart"
+          element={
+            <Suspense fallback={<PopupLoader />}>
+              <CartPage />
+            </Suspense>
+          }
+        />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </>
