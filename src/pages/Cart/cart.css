@@ -92,6 +92,7 @@
 
 .cart__item-price {
   text-wrap: nowrap;
+  white-space: nowrap;
   font-weight: 700;
   font-size: 20px;
   color: rgb(68, 152, 255);
