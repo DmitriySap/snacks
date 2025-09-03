@@ -54,6 +54,7 @@
   padding: 8px;
   border-radius: 8px;
   text-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .catalog__category_active {
