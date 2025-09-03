@@ -1,0 +1,13 @@
+body {
+  font-family: "Roboto", "Arial", "Helvetica", "sans-serif";
+  font-weight: 400;
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+  min-height: 100vh;
+  background-color: var(--bg-body);
+  --bg-body: rgb(17 24 39);
+  --text-color: #fff;
+  --text-secondary: rgb(176, 184, 197);
+  --border-color: rgb(55 65 81);
+}
