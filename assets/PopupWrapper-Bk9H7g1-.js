@@ -1,0 +1,6 @@
+import{c as l,e as r,j as e}from"./index-DK_FHI5l.js";/**
+ * @license lucide-react v0.542.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const i=[["path",{d:"M18 6 6 18",key:"1bl5f8"}],["path",{d:"m6 6 12 12",key:"d8bk6v"}]],u=l("x",i),m=({content:t,title:c,subtitle:s,isActive:p,setIsActive:n,onClose:a})=>(r.useEffect(()=>{const o=d=>{d.key==="Escape"&&n(!1)};return p&&(document.addEventListener("keydown",o),document.body.style.overflow="hidden"),()=>{document.removeEventListener("keydown",o),document.body.style.overflow="auto"}},[p]),e.jsx("div",{className:p?"popup__overlay popup__overlay_active":"popup__overlay",onClick:a,children:e.jsxs("div",{className:"popup",onClick:o=>o.stopPropagation(),children:[e.jsx("div",{className:"popup__blur"}),e.jsxs("div",{className:"popup__content",children:[e.jsxs("div",{className:"popup__header",children:[e.jsxs("div",{className:"popup__title-container",children:[e.jsx("p",{className:"popup__title",children:c}),s&&e.jsx("p",{className:"popup__subtitle",children:s})]}),e.jsx(u,{className:"popup__close-button",width:24,height:24,onClick:a})]}),t]})]})}));export{m as default};
