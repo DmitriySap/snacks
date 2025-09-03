@@ -120,3 +120,38 @@
 .product__cart-button:hover {
   transform: scale(107%);
 }
+
+@media screen and (max-width: 768px) {
+  .product__bottom {
+    padding: 14px;
+  }
+
+  .product__text-container {
+    margin: 0 0 8px 0;
+  }
+
+  .product__name {
+    font-size: 16px;
+    margin: 0 0 4px 0;
+  }
+
+  .product__description {
+    font-size: 13px;
+  }
+
+  .product__price {
+    font-size: 20px;
+  }
+
+  .product__cart-button {
+    padding: 6px;
+  }
+
+  .product__quantity-controls {
+    padding: 3px;
+  }
+
+  .product__quantity {
+    font-size: 14px;
+  }
+}

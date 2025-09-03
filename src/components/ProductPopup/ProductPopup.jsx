@@ -31,7 +31,12 @@ const ProductPopup = ({
           <ul className="product-popup__categories">
             {categories.map((el, index) => (
               <li className="product-popup__category" key={index}>
-                <Tag width={18} height={18} color="var(--text-secondary)" />{" "}
+                <Tag
+                  width={18}
+                  height={18}
+                  color="var(--text-secondary)"
+                  style={{ flexShrink: 0 }}
+                />{" "}
                 {el}
               </li>
             ))}
@@ -60,7 +65,7 @@ const ProductPopup = ({
             </div>
           ) : (
             <button className="product-popup__button" onClick={onAddItemToCart}>
-              <Plus /> Добавить в корзину
+              <Plus /> В корзину
             </button>
           )}
         </div>

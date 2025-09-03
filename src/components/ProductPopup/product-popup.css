@@ -33,6 +33,7 @@
 
 .product-popup__categories {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   margin: 16px 0 0 0;
   padding: 0;
@@ -55,6 +56,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 8px;
 }
 
 .product-popup__price {
@@ -113,4 +115,39 @@
 
 .product-popup__button:hover {
   transform: scale(105%);
+}
+
+@media screen and (max-width: 768px) {
+  .product-popup__description {
+    font-size: 15px;
+    max-height: 100px;
+    overflow-y: auto;
+  }
+
+  .product-popup__category {
+    font-size: 13px;
+  }
+
+  .product-popup__price {
+    font-size: 24px;
+  }
+
+  .product-popup__button {
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  .product-popup__quantity-controls {
+    padding: 6px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .product-popup {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .product-popup__right-top {
+    margin-bottom: 16px;
+  }
 }

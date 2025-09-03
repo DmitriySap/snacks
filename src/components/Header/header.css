@@ -4,6 +4,7 @@
   justify-content: space-between;
   border-bottom: 2px solid var(--border-color);
   padding: 24px;
+  position: relative;
 }
 
 .header__title {
@@ -12,6 +13,112 @@
   color: var(--text-color);
   font-size: 30px;
   margin: 0;
+  cursor: pointer;
+}
+
+.header__burger-button {
+  display: none;
+  width: 30px;
+  height: 22px;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+  transition: opacity 0.1s ease-in;
+}
+
+.header__burger-button:hover {
+  opacity: 0.7;
+}
+
+.header__burger-line {
+  display: block;
+  border-radius: 9999px;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  transition: all 0.1s ease-in;
+}
+
+.header__burger-line_top {
+  top: 0;
+}
+
+.header__burger-line_mid {
+  top: 10px;
+}
+
+.header__burger-line_bot {
+  bottom: 0;
+}
+
+.header__burger-line_mid_active {
+  opacity: 0;
+}
+
+.header__burger-line_top_active {
+  transform: rotate(45deg);
+  top: 10px;
+}
+
+.header__burger-line_bot_active {
+  transform: rotate(-45deg);
+  bottom: 10px;
+}
+
+.header__burger {
+  background-color: var(--bg-body);
+  position: fixed;
+  top: 78px;
+  left: 0;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 24px;
+  list-style: none;
+  box-sizing: border-box;
+  border-bottom: 1px solid var(--border-color);
+  z-index: 10;
+}
+
+.header__burger_active {
+  display: flex;
+}
+
+.header__burger-el {
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 8px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  transition: opacity 0.1s ease-in;
+}
+
+.header__burger-el:hover {
+  opacity: 0.7;
+}
+
+.header__overlay {
+  display: none;
+  position: fixed;
+  top: 78px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.575);
+  z-index: 9;
+  cursor: pointer;
+}
+
+.header__overlay_active {
+  display: block;
 }
 
 .header__nav {
@@ -43,4 +150,25 @@
 .header__nav-el_active {
   color: rgb(80, 131, 241);
   border-color: rgb(73, 120, 223);
+}
+
+@media screen and (max-width: 768px) {
+  .header__title {
+    font-size: 24px;
+  }
+
+  .header__nav-el {
+    font-size: 15px;
+    padding: 6px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header__nav {
+    display: none;
+  }
+
+  .header__burger-button {
+    display: block;
+  }
 }
