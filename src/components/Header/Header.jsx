@@ -40,7 +40,7 @@ const Header = () => {
   return (
     <header className="header">
       <h1 className="header__title" onClick={() => handleBurgerElClick("/")}>
-        Закуски для бани
+        Фуршетные закуски
       </h1>
       <div className="header__burger-button" onClick={handleBurgerToggle}>
         <span
