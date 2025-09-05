@@ -29,7 +29,7 @@ const Header = () => {
 
   const navItems = [
     { text: "Каталог", path: "/" },
-    { text: "Контакты", path: "/contacts" },
+    //{ text: "Контакты", path: "/contacts" },
     {
       text: `Корзина ${totalCount > 0 ? `(${totalCount})` : ""}`,
       path: "/cart",

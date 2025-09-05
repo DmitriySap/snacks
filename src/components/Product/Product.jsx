@@ -43,7 +43,9 @@ const Product = ({ id, imageSrc, categories, title, description, price }) => {
         />
         <div className="product__bottom">
           <div className="product__text-container">
-            <p className="product__name">{title}</p>
+            <p className="product__name" title={title}>
+              {title}
+            </p>
             <p className="product__description" title={description}>
               {description}
             </p>

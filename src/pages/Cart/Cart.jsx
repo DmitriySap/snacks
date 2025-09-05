@@ -5,6 +5,7 @@ import {
   addItem,
   removeItem,
   removeItemCompletely,
+  emptyCart,
 } from "../../store/cartSlice";
 
 const Cart = ({}) => {
@@ -30,6 +31,10 @@ const Cart = ({}) => {
     dispatch(removeItemCompletely(id));
   };
 
+  const handleEmptyCart = () => {
+    dispatch(emptyCart());
+  };
+
   const orderItems = [
     {
       icon: <Phone width={20} height={20} color="var(--text-color)" />,
@@ -44,6 +49,7 @@ const Cart = ({}) => {
       href: "https://t.me/Olgabanya14",
     },
   ];
+
   return (
     <section className="cart">
       <div className="cart__title-container">
